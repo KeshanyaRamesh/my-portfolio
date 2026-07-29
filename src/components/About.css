@@ -1,0 +1,48 @@
+.about {
+
+  min-height: 60vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 50px;
+
+  background-color: white;
+
+}
+
+
+.about-content {
+
+  max-width: 800px;
+
+  text-align: center;
+
+}
+
+
+.about h2 {
+
+  font-size: 40px;
+
+  color: #0f172a;
+
+  margin-bottom: 25px;
+
+}
+
+
+.about p {
+
+  font-size: 18px;
+
+  color: #475569;
+
+  line-height: 1.8;
+
+  margin-bottom: 15px;
+
+}
