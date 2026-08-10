@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Hero.css";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile.png";
 
 function Hero(props) {
   const [likes, setLikes] = useState(0);
