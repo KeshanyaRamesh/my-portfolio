@@ -1,8 +1,15 @@
+/* ================================
+   Projects Section
+================================ */
+
 .projects {
   padding: 100px 8%;
   background-color: #f8fafc;
   text-align: center;
 }
+
+
+/* Section Heading */
 
 .projects h2 {
   font-size: 38px;
@@ -10,72 +17,136 @@
   color: #0f172a;
 }
 
+
+/* Introduction */
+
 .projects-intro {
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto 50px;
   color: #64748b;
   font-size: 17px;
   line-height: 1.7;
 }
 
+
+/* ================================
+   Projects Grid
+================================ */
+
 .projects-container {
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
+
   gap: 30px;
+
   max-width: 1200px;
+
   margin: 0 auto;
 }
 
+
+/* ================================
+   Project Card
+================================ */
+
 .project-card {
   background-color: white;
+
   padding: 30px;
+
   border-radius: 15px;
+
   border: 1px solid #e2e8f0;
+
   text-align: left;
+
+  display: flex;
+
+  flex-direction: column;
+
+  min-height: 320px;
 
   transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease;
-
-  display: flex;
-  flex-direction: column;
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
+
+/* Card Hover */
+
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 
   box-shadow:
     0 15px 30px rgba(0, 0, 0, 0.12);
+
+  border-color: #0284c7;
 }
+
+
+/* ================================
+   Project Title
+================================ */
 
 .project-card h3 {
   font-size: 22px;
+
   color: #0284c7;
+
   margin-bottom: 15px;
+
+  line-height: 1.4;
 }
+
+
+/* ================================
+   Project Description
+================================ */
 
 .project-card p {
   color: #64748b;
+
   line-height: 1.7;
+
   margin-bottom: 15px;
+
+  font-size: 15px;
 }
+
+
+/* ================================
+   Technologies
+================================ */
 
 .project-card .technologies {
   font-size: 14px;
+
   color: #334155;
+
+  margin-top: auto;
+
+  margin-bottom: 20px;
 }
+
 
 .project-card .technologies strong {
   color: #0f172a;
 }
 
+
+/* ================================
+   GitHub Button
+================================ */
+
 .project-button {
   display: inline-block;
 
-  margin-top: auto;
   padding: 11px 18px;
 
   background-color: #0284c7;
+
   color: white;
 
   text-decoration: none;
@@ -84,29 +155,49 @@
 
   text-align: center;
 
-  transition: 0.3s ease;
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
+
+
+/* Button Hover */
 
 .project-button:hover {
   background-color: #0369a1;
+
   transform: translateY(-2px);
 }
 
 
-/* Tablet */
+/* ================================
+   Tablet
+================================ */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+
+  .projects {
+    padding: 80px 6%;
+  }
 
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
   }
 
 }
 
 
-/* Mobile */
+/* ================================
+   Mobile
+================================ */
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
   .projects {
     padding: 70px 5%;
@@ -116,8 +207,26 @@
     font-size: 30px;
   }
 
+  .projects-intro {
+    font-size: 15px;
+
+    margin-bottom: 35px;
+  }
+
   .projects-container {
     grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .project-card {
+    padding: 25px;
+
+    min-height: auto;
+  }
+
+  .project-card h3 {
+    font-size: 20px;
   }
 
 }
